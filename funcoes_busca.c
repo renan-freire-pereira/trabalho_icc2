@@ -1,4 +1,5 @@
 // Busca Sequencial, Binária, Sequencial indexada
+#include "livro_hash.h"
 
 // Métodos de Busca (Retornam o ponteiro do livro encontrado ou NULL)
 Livros* busca_sequencial(HashLivrosIdentificador *hli, unsigned int identificador);

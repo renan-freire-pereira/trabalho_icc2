@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h> // Para uso do português
+#include "livro_hash.h"
 
 
 
@@ -37,7 +38,7 @@ void inicializar_hash(HashLivrosIdentificador *hli);
 // Funções de Gerenciamento e Cadastro
 int cadastrar_livro(HashLivrosIdentificador *hli, Livros livro);
 int editar_livro(HashLivrosIdentificador *hli, unsigned int identificador);
-
+int emprestar_livro(HashLivrosIdentificador *hli, unsigned int identificador);
 
 
 // --- FUNÇÃO PRINCIPAL ---
@@ -85,11 +86,10 @@ int main(){
         switch (opcao) {
             case 1: {
                 Livros novoLivro;
+                char nome[200];
                 printf("Digite o nome do livro:");
-                fgets(nome, sizeof(nome), stdin); // Captura a entrada completa
-nome[strcspn(nome, '
-')] = 0; // Remove a nova linha fina
-                cadastrar_livro(&minha_hash, novo_livro);
+                fgets(nome, sizeof(nome), stdin);
+                cadastrar_livro(&minha_hash, novoLivro);
                 break;
             }
             case 2:

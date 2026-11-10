@@ -1,3 +1,4 @@
+#include "livro_hash.h"
 // Ordenacoes usadas: Insertion Sort, Merge Sort (Recursiva) e Heapsort com sift-down iterativo
 
 // Métodos de Ordenação (Trabalham sobre um vetor de livros para o relatório)
